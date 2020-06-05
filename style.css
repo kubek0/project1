@@ -1,0 +1,80 @@
+body {
+background-image: url("plexus.gif");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 2560px 1440px;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400px;
+}
+.container {
+  width: 80px;
+  margin: 0 auto;
+}
+header {
+  background: #76edff;
+  width: 1294px;
+  height: 200px;
+  opacity: 0.5;
+}
+header::after {
+content: '';
+display: table;
+clear: both;
+}
+.logo {
+display: inline-block;
+  width: 40px;
+  height: 40px;
+  object-position: top;
+
+}
+nav {
+  float: right;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+
+
+}
+
+nav a {
+  display: inline-block;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: right;
+}
+
+nav a:hover {
+  color: #000;
+
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
